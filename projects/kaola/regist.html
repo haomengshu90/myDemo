@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>-网易考拉-</title>
+    <link rel="stylesheet" href="kaolaCSS/regist.css"/>
+    <link rel="stylesheet" href="kaolaCSS/iconfont.css"/>
+    <script  type="text/javascript" src="kaolaJS/jquery.min.js"></script>
+    <script type="text/javascript" src="kaolaJS/regist.js"></script>
+</head>
+<body>
+    <div class="g-hd">
+        <div class="g-in">
+            <a href="#" class="m-logo"><img id="logo" src="wphImg/264271ddbec447288f17aef71119b1f4.png" alt=""></a>
+            <div class="m-tr-block">已有帐号？去
+                <a id="btn_Login" href="kaola.html">登录</a>
+            </div>
+        </div>
+    </div>
+    <div id="reg_block" class="g-bd">
+        <div class="clearfix m-tab">
+            <div class="left select">普通帐号注册</div>
+            <a target="_blank" href="#" id="rightBtn" class="right ">靓号注册</a>
+        </div>
+        <div class="m-opr clearfix">
+            <form id="bind-phone-form" class="form" action="" method="POST" onsubmit="return validateForm();">
+                <div class="item">
+                    <span class="label">用户名：</span>
+                    <div class="input">
+                        <input type="text" id="username" name="username" class="text" placeholder="4-20位字母数字组合">
+                        <label id="username_msg" class="hide">用户名不能为空</label>
+                    </div>
+                </div>
+                <div class="item">
+                    <span class="label">请设置密码：</span>
+                    <div class="input">
+                        <input type="password" id="password" name="password" class="text" placeholder="6-20位字母数字组合">
+                        <label id="pwd_msg" class="hide">密码不能为空</label>
+                    </div>
+                </div>
+                <div class="item">
+                    <span class="label">请确认密码：</span>
+                    <div class="input">
+                        <input type="password" id="pwdRepeat" name="pwdRepeat" class="text"  placeholder="6-20位字母数字组合">
+                        <label id="pwdRepeat_msg" class="hide">密码不能为空</label>
+                    </div>
+                </div>
+                <div class="item">
+                    <span class="label">验证邮箱：</span>
+                    <div class="input">
+                        <input type="text" id="mail" name="mail" class="text" placeholder="邮箱格式">
+                        <label id="mail_msg" class="hide">Email不能为空</label>
+                    </div>
+                </div>
+                <div class="item">
+                    <span class="label">&nbsp;</span>
+                    <input type="submit" class="btn-img" id="registsubmit" value="立即注册">
+                </div>
+            </form>
+        </div>
+        <div class="bottom">
+            <a href="#" target="_blank">
+               <img src="wphImg/regist.png"/>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>

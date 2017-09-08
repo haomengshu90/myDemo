@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>-网易考拉-登陆页面</title>
+    <link rel="stylesheet" href="kaolaCSS/login.css"/>
+    <link rel="stylesheet" href="kaolaCSS/iconfont.css"/>
+    <script  type="text/javascript" src="kaolaJS/jquery.min.js"></script>
+    <script type="text/javascript" src="kaolaJS/login.js"></script>
+</head>
+<body>
+    <div class="top">
+        <a href="#" target="_blank">
+            <img src="wphImg/1bp5920ut32_1920_80.jpg"/>
+        </a>
+    </div>
+    <div class="header">
+        <div class="headContent">
+            <a href=""></a>
+            <div class="headimg">
+            </div>
+        </div>
+    </div>
+    <div class="login-banner">
+       <div class="banner">
+            <div class="loginWrap">
+                <div class="loginForm">
+
+                        <ul class="top">
+                            <li class="head2"><a href="javascript:void(0)">手机号登录</a></li>
+                            <li ><a href="javascript:void(0)">邮箱登录</a></li>
+                        </ul>
+                        <div class="loginwraps">
+                            <div class="bannercont">
+                                <div class="m-cnt">
+                                    <form id="login-form" action="" method="post" onsubmit="return validateForm();">
+                                        <div class="u-tab">
+                                            <a class="tab0">使用密码验证登录</a>
+                                        </div>
+                                        <div class="inputbox">
+                                            <span></span>
+                                            <div class="box">
+                                                <label>请输入手机号</label>
+                                                <input type="tel" placeholder="请输入手机号" id="tel"/>
+                                                <div id="tel_msg"></div>
+                                            </div>
+                                            <i></i>
+                                        </div>
+                                       <div class="inputbox password">
+                                            <span></span>
+                                            <div class="box">
+                                                <label>请输入密码</label>
+                                                <input type="password" placeholder="请输入密码" id="password"/>
+                                                <div id="password_msg"></div>
+                                            </div>
+                                            <i></i>
+                                         </div>
+                                        <div class="loginbox">
+                                            <a id="submitBtn">登 录</a>
+                                        </div>
+                                        <div class="m-unlogin">
+                                            <div class="b-unlogn j-unlogn f-dn">
+                                                <span class="u-checkbox tabfocus">
+                                                    <input type="checkbox" name="un-login" class="un-login">
+                                                </span>
+                                                <label class="un-login">10天免登录</label>
+                                                <a class="forgetpwdReg" href="#" target="_blank" >忘记密码？</a>
+                                            </div>
+                                            <!--Regular if6-->
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="bannercont">
+                                <div class="m-cnt">
+                                    <form id="loginForm" action="index.html" method="post" >
+                                        <div class="inputbox">
+                                            <span></span>
+                                            <div class="box">
+                                                <label>请输入邮箱</label>
+                                                <input type="email" placeholder="网易邮箱账号" id="email"/>
+                                                <div id="email_msg"></div>
+                                            </div>
+                                            <i></i>
+                                        </div>
+                                        <div class="inputbox password">
+                                            <span></span>
+                                            <div class="box">
+                                                <label>请输入密码</label>
+                                                <input type="emailpassword" placeholder="密码" id="emailpassword"/>
+                                                <div id="emailpassword_msg"></div>
+                                            </div>
+                                            <i></i>
+                                        </div>
+                                        <div class="loginbox">
+                                            <a id="emailSubmit">登 录</a>
+                                        </div>
+                                        <div class="m-unlogin">
+                                            <div class="b-unlogn j-unlogn f-dn">
+                                                <span class="u-checkbox tabfocus">
+                                                    <input type="checkbox" name="un-login" class="un-login">
+                                                </span>
+                                                <label class="un-login">10天免登录</label>
+                                                <a class="forgetpwdReg" href="#" target="_blank" >忘记密码？</a>
+                                            </div>
+                                            <!--Regular if6-->
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+       </div>
+    </div>
+</body>
+</html>
